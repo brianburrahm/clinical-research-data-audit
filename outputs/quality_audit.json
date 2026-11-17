@@ -1,0 +1,43 @@
+{
+  "source": "statsmodels.datasets.randhie (RAND Health Insurance Experiment)",
+  "source_record_count": 20190,
+  "linked_record_count": 20190,
+  "record_id_unique": true,
+  "linkage": {
+    "both": 20190,
+    "left_only": 0,
+    "right_only": 0
+  },
+  "missing_by_field": {
+    "mdvis": 0,
+    "lncoins": 0,
+    "idp": 0,
+    "lpi": 0,
+    "fmde": 0,
+    "physlm": 0,
+    "disea": 0,
+    "hlthg": 0,
+    "hlthf": 0,
+    "hlthp": 0
+  },
+  "invalid_visits": 0,
+  "nonbinary_physical_limitation_values": 1052,
+  "fractional_disease_burden_values": 18396,
+  "invalid_deductible_flag": 0,
+  "overlapping_health_categories": 0,
+  "zero_visit_records": 6308,
+  "notes": [
+    "The two linked inputs are pedagogical views split from one public source; this is NOT a real cross-system linkage.",
+    "record_id is a row surrogate, NOT a participant identifier; repeated person-years cannot be identified.",
+    "Health-status flags refer to good, fair or poor; all zero indicates the omitted excellent category, provided the fields are complete.",
+    "Published data dictionary describes physlm as binary and disea as count, but supplied values include fractions. Retain and flag them as source coding ambiguities; do not silently recode."
+  ],
+  "sql_checks": {
+    "records": 20190,
+    "distinct_record_ids": 20190,
+    "negative_visit_counts": 0,
+    "health_flag_conflicts": 0,
+    "missing_coinsurance": 0,
+    "missing_visit_counts": 0
+  }
+}

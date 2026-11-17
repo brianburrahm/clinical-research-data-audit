@@ -1,0 +1,31 @@
+{
+  "dataset": "statsmodels.datasets.randhie (RAND Health Insurance Experiment)",
+  "unit_of_analysis": "Record / person-year; cannot identify repeated people in this extract",
+  "source_records": 20190,
+  "analyzed_records": 20190,
+  "excluded_for_missing_key_variables": 0,
+  "mean_visits": 2.86,
+  "median_visits": 1.0,
+  "zero_visit_percent": 31.24,
+  "visit_count_variance_to_mean": 7.09,
+  "mean_by_health_status": {
+    "Excellent": 2.634,
+    "Fair": 3.692,
+    "Good": 2.902,
+    "Poor": 5.795
+  },
+  "model_comparison": {
+    "poisson_aic_in_sample": 125924.95,
+    "negative_binomial_aic_in_sample": 87031.0,
+    "negative_binomial_alpha": 1.3177,
+    "poisson_mae_in_sample": 2.608,
+    "negative_binomial_mae_in_sample": 2.612
+  },
+  "negative_binomial_coinsurance_coefficient": -0.0722,
+  "warnings": [
+    "Observational model associations must not be interpreted as estimated randomized treatment effects.",
+    "The subset lacks original participant ID, study year, site, and family cluster; person-clustered uncertainty cannot be computed.",
+    "AIC and MAE are in-sample model-fit diagnostics, not validation or clinical performance.",
+    "This historical experiment is not representative of current utilization or care delivery."
+  ]
+}
